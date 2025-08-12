@@ -154,11 +154,13 @@ body {
 }
 
 .profile-placeholder img {
-    max-width: 200%;
-    height: 150%;
-    border-radius: 30%;
-    object-fit: cover;
+    max-width: 100%; /* fits within parent */
+    height: auto; /* keeps aspect ratio */
+    border-radius: 30%; /* rounded shape */
+    object-fit: cover; /* crops nicely if fixed size */
+    display: block; /* removes inline spacing */
 }
+
 
 
 
@@ -808,4 +810,5 @@ section {
     html {
         scroll-behavior: smooth;
     }
+
 } 
